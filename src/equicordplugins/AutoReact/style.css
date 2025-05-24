@@ -1,0 +1,103 @@
+/* Emoji picker style */
+.auto-react-emoji-picker em-emoji-picker {
+    width: 100%;
+
+    --em-rgb-background: var(--background-secondary);
+    --em-rgb-input: var(--background-primary);
+    --em-rgb-color: var(--text-normal);
+    --em-rgb-accent: var(--brand-experiment);
+}
+
+/* Emoji display button style */
+.auto-react-emoji-container {
+    position: relative;
+    display: inline-block;
+}
+
+.auto-react-emoji-display-button {
+    background: var(--background-secondary);
+    border: 1px solid var(--background-tertiary);
+    border-radius: 4px;
+    padding: 4px 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.auto-react-emoji-display-button:hover {
+    background: var(--background-modifier-hover);
+}
+
+.auto-react-emoji-picker {
+    position: fixed;
+    z-index: 1000;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--background-secondary);
+    border: 1px solid var(--background-tertiary);
+    border-radius: 4px;
+    box-shadow: 0 2px 10px rgb(0 0 0 / 20%);
+}
+
+.auto-react-emoji-picker::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgb(0 0 0 / 50%);
+    z-index: -1;
+}
+
+.auto-react-emoji-picker-loading {
+    padding: 16px;
+    text-align: center;
+    color: var(--text-muted);
+}
+
+.auto-react-expand-button {
+    background: var(--background-secondary);
+    border: 1px solid var(--background-tertiary);
+    border-radius: 4px;
+    padding: 4px 8px;
+    margin: 8px 0;
+    cursor: pointer;
+    color: var(--text-normal);
+}
+
+.auto-react-expand-button:hover {
+    background: var(--background-modifier-hover);
+}
+
+.auto-react-channels-list {
+    margin-top: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.auto-react-channel-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px;
+    background: var(--background-secondary);
+    border: 1px solid var(--background-tertiary);
+    border-radius: 4px;
+}
+
+.auto-react-channel-name {
+    flex: 1;
+    color: var(--text-normal);
+}
+
+.auto-react-remove-channel {
+    background: var(--background-secondary);
+    border: 1px solid var(--background-tertiary);
+    border-radius: 4px;
+    padding: 4px 8px;
+    cursor: pointer;
+    color: var(--text-danger);
+}
+
+.auto-react-remove-channel:hover {
+    background: var(--background-modifier-hover);
+}
